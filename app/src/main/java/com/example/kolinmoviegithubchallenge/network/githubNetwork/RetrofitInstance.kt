@@ -1,6 +1,6 @@
 package com.example.kolinmoviegithubchallenge.network.githubNetwork
 
-import com.example.kolinmoviegithubchallenge.constants.GithubConstants
+import com.example.kolinmoviegithubchallenge.common.constants.GithubConstants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

@@ -5,14 +5,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kolinmoviegithubchallenge.R
+import com.example.kolinmoviegithubchallenge.common.inflate
 import com.example.kolinmoviegithubchallenge.models.github.GithubRepo
 import kotlinx.android.synthetic.main.activity_github.view.*
 
 class GithubAdapter(private val githubRepo: List<GithubRepo>)
     : RecyclerView.Adapter<GithubViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GithubViewHolder {
-        return GithubViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.activity_github,parent,false))
+        //return GithubViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.activity_github,parent,false))
+        return GithubViewHolder(parent.inflate(R.layout.activity_github,false))
     }
+
 
     override fun getItemCount(): Int {
         return githubRepo.size

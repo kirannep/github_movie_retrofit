@@ -1,4 +1,4 @@
-package com.example.kolinmoviegithubchallenge.constants
+package com.example.kolinmoviegithubchallenge.common.constants
 
 class GithubConstants {
     companion object{
